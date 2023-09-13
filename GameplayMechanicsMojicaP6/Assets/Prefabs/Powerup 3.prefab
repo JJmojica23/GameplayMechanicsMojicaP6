@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4494920493435391030
+--- !u!1 &5387967259603795886
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2107533889163088642}
-  - component: {fileID: 6389815650697297637}
-  - component: {fileID: 3379354816499484240}
-  - component: {fileID: 4472688211667178250}
-  - component: {fileID: 4452903620477001123}
+  - component: {fileID: 5124753912945137880}
+  - component: {fileID: 8898598524210700280}
+  - component: {fileID: 3715203287422477957}
+  - component: {fileID: 4412317942679871626}
+  - component: {fileID: 5957554924093006461}
   m_Layer: 0
-  m_Name: Powerup 1
+  m_Name: Powerup 3
   m_TagString: Powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2107533889163088642
+--- !u!4 &5124753912945137880
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4494920493435391030}
+  m_GameObject: {fileID: 5387967259603795886}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 5.6}
+  m_LocalPosition: {x: 2.41, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6389815650697297637
+--- !u!33 &8898598524210700280
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4494920493435391030}
-  m_Mesh: {fileID: 4300000, guid: 44cb397c8b73c2f40bfa05c2199ffa2b, type: 3}
---- !u!23 &3379354816499484240
+  m_GameObject: {fileID: 5387967259603795886}
+  m_Mesh: {fileID: 4300000, guid: 31e6dd0b1a83d2545a63dfc9ef21c42f, type: 3}
+--- !u!23 &3715203287422477957
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4494920493435391030}
+  m_GameObject: {fileID: 5387967259603795886}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9c0880e4cd8a8704e82b6940624b569a, type: 2}
+  - {fileID: 2100000, guid: 5446003ea25a0284bb5521f0a09d75cb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,13 +85,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4472688211667178250
+--- !u!114 &4412317942679871626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5387967259603795886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c22d172f036684caa217cac81718d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpType: 3
+--- !u!65 &5957554924093006461
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4494920493435391030}
+  m_GameObject: {fileID: 5387967259603795886}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -104,18 +117,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.67489624, y: 0.95568633, z: 0.20007594}
-  m_Center: {x: 0, y: -0.00000011920929, z: 0.000000007450581}
---- !u!114 &4452903620477001123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4494920493435391030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45c22d172f036684caa217cac81718d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  powerUpType: 1
+  m_Size: {x: 0.891613, y: 1.3382554, z: 0.20007595}
+  m_Center: {x: -0.0000018924475, y: 0, z: 0.000000011175871}

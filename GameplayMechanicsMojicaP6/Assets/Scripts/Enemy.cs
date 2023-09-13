@@ -1,9 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Jobs;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public bool isBoss = false;
+    public float spawnInterval;
+    private float nextSpawn;
+    public int miniEnemySpawnCount;
+    private SpawnManager spawnManager;
     public float speed;
     private Rigidbody enemyRb;
     private GameObject player;
@@ -13,6 +19,11 @@ public class Enemy : MonoBehaviour
     {
         enemyRb = GetComponent<Rigidbody>();
         player = GameObject.Find("Player");
+
+        if (isBoss)
+        {
+            spawnManager = FindObjectOfType<SpawnManager>();
+        }
     }
 
     // Update is called once per frame
@@ -22,9 +33,19 @@ public class Enemy : MonoBehaviour
 
         enemyRb.AddForce(lookDirection * speed);
 
-        if (transform.position.y < -10) 
+        if (transform.position.y < -2.5)
         {
-            Destroy(gameObject);        
+            Destroy(gameObject);
         }
+
+        if (isBoss)
+        {
+            if (Time.time > nextSpawn)
+            {
+                nextSpawn = Time.time + spawnInterval;
+                // spawnManager.SpawnMiniEnemy(miniEnemySpawnCount);
+            }
+        }
+
     }
 }
