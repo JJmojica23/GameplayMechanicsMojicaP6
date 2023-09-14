@@ -43,7 +43,7 @@ public class Enemy : MonoBehaviour
             if (Time.time > nextSpawn)
             {
                 nextSpawn = Time.time + spawnInterval;
-                // spawnManager.SpawnMiniEnemy(miniEnemySpawnCount);
+                spawnManager.SpawnMiniEnemy(miniEnemySpawnCount);
             }
         }
 
